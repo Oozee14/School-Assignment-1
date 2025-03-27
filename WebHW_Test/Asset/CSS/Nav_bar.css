@@ -5,8 +5,7 @@ body {
     background-color: gray;
 }
 .navbar {
-    position: sticky;
-    top: -2px;
+    position: relative;
     width: 100%;
     height: 50px;
     background-color: white;
