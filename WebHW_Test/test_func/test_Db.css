@@ -1,0 +1,21 @@
+body {
+    max-width: 1920px;
+    max-height: 1080px;
+    margin: 0;
+    background-color: gray;
+}
+.navbar {
+    height: 45px;
+    background-color: white;
+    overflow: hidden;
+}
+.nav_table {
+    border-collapse: collapse;
+}
+.tran_button {
+    background-color: transparent;
+    border: none;
+}
+button img {
+    width: 40px;
+}
