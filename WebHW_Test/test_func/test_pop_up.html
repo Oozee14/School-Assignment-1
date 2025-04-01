@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent with Two Child Divs and Popup</title>
+  <style>
+    /* Parent container with relative positioning so that the popup is positioned relative to it */
+    .parent {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 500px; /* You can adjust this as needed */
+      border: 2px solid #333;
+    }
+    /* Child 1 occupies 30vw */
+    .child1 {
+      width: 30vw;
+      background-color: #ADD8E6; /* Light blue */
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    /* Child 2 occupies 70vw */
+    .child2 {
+      width: 70vw;
+      background-color: #F08080; /* Light coral */
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    /* Popup that spans the full height and width of the parent */
+    .popup {
+      display: none;               /* Hidden by default */
+      position: absolute;          /* Positioned relative to .parent */
+      top: 0;
+      left: 155;
+      width: 50px;
+      height: 100%;                /* 100% height of the parent */
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      z-index: 10;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .popup button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child1">
+      <p>This is Child 1 (30vw width).</p>
+      <button id="openPopup">Open Popup</button>
+    </div>
+    <div class="child2">
+      <p>This is Child 2 (70vw width).</p>
+    </div>
+    <!-- Popup overlay -->
+    <div class="popup" id="popup">
+      <p>This is the popup content. It covers 100% of the parent's height.</p>
+      <button id="closePopup">Close Popup</button>
+    </div>
+  </div>
+  <script>
+    const openBtn = document.getElementById('openPopup');
+    const closeBtn = document.getElementById('closePopup');
+    const popup = document.getElementById('popup');
+    
+    openBtn.addEventListener('click', function() {
+      popup.style.display = 'block';
+    });
+    
+    closeBtn.addEventListener('click', function() {
+      popup.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

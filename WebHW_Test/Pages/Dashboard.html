@@ -5,37 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../Asset/CSS/Nav_bar.css">
+    <link rel="stylesheet" href="../Asset/CSS/Side_bar.css">
+    <link rel="stylesheet" href="../Asset/CSS/Db_content.css">
 </head>
 <body>
-    <div class="navbar">
-        <table border="1">
-            <tr>
-                <td>
-                    <button class="nav-button tran_button">
-                        <img src="../Asset/Image/restaurant-logo.png" alt="Res_logo" align="center">
-                    </button>
-                </td>
-                <td>
-                    <button class="tran_button" style="color: red;">
-                        ☰
-                    </button>
-                </td>
-                <td width="100%"></td>
-                <td>
-                    <button class="nav-button Pos">POS</button>
-                </td>
-                <td align="center" style="padding: 10px;">
-                    <img src="../Asset/Image/bell.png" alt="noti_bell" class="noti_bell">
-                </td>
-                <!-- look this up in the CSS -->
-                <td style="padding: 5px;">
-                    <button class="User">+</button>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="Display_main">
-        hello
+    <div class="main">
+        <div class="navbar">
+            <table border="0">
+                <tr>
+                    <td width="10vw">
+                        <button class="nav-button tran-button">
+                            <img src="../Asset/Image/restaurant-logo.png" alt="Res_logo" class="logo-70" align="center">
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tran-button" style="color: red; font-size: 25px;">
+                            ☰
+                        </button>
+                    </td>
+                    <td width="100%"></td>
+                    <td>
+                        <button class="nav-button Pos">POS</button>
+                    </td>
+                    <td align="center">
+                        <img src="../Asset/Image/bell.png" alt="noti_bell" class="noti-bell">
+                    </td>
+                    <!-- look this up in the CSS -->
+                    <td>
+                        <button class="User">+</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="Display-main">
+            <div class="side-bar">
+                <ul>
+                    <li>
+                        <img src="../Asset/Image/icons8-dashboard-100.png" alt="Dashboard-png" class="png-55">
+                        Dashboard
+                    </li>
+                    <li class="products">
+                        <img src="../Asset/Image/icons8-products-100.png" alt="Products-png" class="png-55">
+                        Products
+                        <ul>
+                            <li>Create Product</li>
+                            <li>All Products</li>
+                            <li>Category</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="../Asset/Image/icons8-people-100.png" alt="" class="png-55">
+                        People
+                    </li>
+                    <li>
+                        <img src="../Asset/Image/icons8-setting-100.png" alt="" class="png-55">
+                        Setting
+                    </li>
+                    <li>
+                        <img src="../Asset/Image/icons8-report-100.png" alt="" class="png-55">
+                        Reports
+                    </li>
+                </ul>
+            </div>
+            <!-- Down here is where you write everything -->
+            <!-- recommanded to use div and table -->
+            <div class="main-content"><p style="margin-top: 0px;">Main</p></div>
+        </div>
     </div>
     <script src="../Asset/Javascript/Nav_bar.js"></script>
 </body>

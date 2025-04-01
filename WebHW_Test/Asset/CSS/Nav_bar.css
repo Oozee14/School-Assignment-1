@@ -1,36 +1,32 @@
-body {
-    max-width: 1920px;
-    max-height: 1080px;
-    margin: 0;
-    background-color: gray;
-}
+
 .navbar {
-    position: fixed;
-    width: 100%;
-    height: 50px;
+    box-shadow: 2px 2px 5px gray;
     background-color: white;
-    overflow: visible;
 }
-.nav_table {
-    width: 100%;
-    border-collapse: collapse;
+.navbar table {
+    position: relative;
+    z-index: 3;
 }
-.tran_button {
+.navbar td {
+    padding: 0px 10px 0px 10px;
+}
+.tran-button {
     background-color: transparent;
     border: none;
 }
-button img {
-    width: 40px;
+.logo-70 {
+    width: 70px;
 }
 .Pos {
-    background-color: lightgray;
-    border: 1px solid red;
-    border-radius: 15px;
+    background-color: rgb(225, 225, 225);
+    border: 2px solid red;
+    border-radius: 20px;
     color: red;
-    padding: 5px 15px;
+    font-size: 15px;
+    padding: 10px 26px;
 }
-.noti_bell {
-    width: 18px;
+.noti-bell {
+    width: 20px;
     color: red;
 }
 /* just turn the button transparent and put their profile */
@@ -38,5 +34,5 @@ button img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    font-size: 23px;
+    font-size: 22px;
 }

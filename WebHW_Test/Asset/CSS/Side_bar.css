@@ -1,0 +1,43 @@
+.side-bar {
+    /* display: none; */
+    position: relative;
+    width: 120px;
+    height: 1020px;
+    border: 1px solid lightgrey;
+    background-color: lightgray;
+    box-shadow: 2px 3px 5px  gray;
+    z-index: 2;
+}
+.side-bar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.side-bar ul li {
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.png-55 {
+    width: 55px;
+}
+li.products {
+    
+    z-index: 1;
+}
+li.products ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    left: 110px;
+    top: 0;
+    height: 100%;
+}
+li.products ul li {
+    border: 0px solid;
+}
+li.products:hover ul{
+    display: inline-block;
+}
