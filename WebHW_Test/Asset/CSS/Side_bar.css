@@ -23,11 +23,10 @@
 .png-55 {
     width: 55px;
 }
-li.products {
-    
+li.dropdown {
     z-index: 1;
 }
-li.products ul {
+li.dropdown ul {
     display: none;
     position: absolute;
     background-color: white;
@@ -35,9 +34,9 @@ li.products ul {
     top: 0;
     height: 100%;
 }
-li.products ul li {
+li.dropdown ul li {
     border: 0px solid;
 }
-li.products:hover ul{
+li.dropdown:hover ul{
     display: inline-block;
 }
