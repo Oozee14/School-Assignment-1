@@ -8,17 +8,26 @@
     box-shadow: 2px 3px 5px  gray;
     z-index: 2;
 }
-.side-bar ul {
+.side-bar > ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    color: brown;
 }
-.side-bar ul li {
+.side-bar > ul > li {
     text-align: center;
     border: 1px solid lightgray;
     padding: 10px;
     background-color: white;
+    color: brown;
     cursor: pointer;
+}
+.side-bar > ul > li > a {
+    text-decoration: none;
+    color: brown;
+}
+.side-bar > ul > li:hover {
+    color: crimson;
 }
 .png-55 {
     width: 55px;
@@ -26,17 +35,39 @@
 li.dropdown {
     z-index: 1;
 }
-li.dropdown ul {
+li.dropdown > ul {
     display: none;
     position: absolute;
     background-color: white;
-    left: 110px;
+    left: 109px;
     top: 0;
-    height: 100%;
+    height: 90%;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 1px 2px 5px gray;
 }
-li.dropdown ul li {
+li.dropdown > ul > li {
     border: 0px solid;
+    padding: 10px;
+    padding-right: 40px;
+    white-space: nowrap;
+    display: flex;
 }
-li.dropdown:hover ul{
+li.dropdown > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+.dropimg {
+    width: 35px;
+    vertical-align: middle;
+}
+.dropimg-30 {
+    width: 30px;
+    vertical-align: middle;
+}
+li.dropdown:hover > ul{
     display: inline-block;
+}
+li.dropdown > ul > li:hover{
+    background-color: aliceblue;
 }

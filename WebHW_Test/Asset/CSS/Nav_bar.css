@@ -3,7 +3,7 @@
     box-shadow: 2px 2px 5px gray;
     background-color: white;
 }
-.navbar table {
+.navbar > table {
     position: relative;
     z-index: 3;
 }
