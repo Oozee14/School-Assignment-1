@@ -1,5 +1,6 @@
 
 .navbar {
+    height: 95px;
     box-shadow: 2px 2px 5px gray;
     background-color: white;
 }
@@ -15,7 +16,7 @@
     border: none;
 }
 .logo-70 {
-    width: 70px;
+    width: 90px;
 }
 .Pos {
     background-color: rgb(225, 225, 225);
@@ -28,11 +29,12 @@
 .noti-bell {
     width: 20px;
     color: red;
+    padding: 10px;
 }
 /* just turn the button transparent and put their profile */
 .User {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    font-size: 22px;
+    margin: 10px;
 }

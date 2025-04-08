@@ -1,7 +1,7 @@
 .side-bar {
     /* display: none; */
     position: relative;
-    width: 120px;
+    width: 130px;
     height: 1020px;
     border: 1px solid lightgrey;
     background-color: lightgray;
@@ -30,7 +30,7 @@
     color: crimson;
 }
 .png-55 {
-    width: 55px;
+    width: 60px;
 }
 li.dropdown {
     z-index: 1;
@@ -39,7 +39,7 @@ li.dropdown > ul {
     display: none;
     position: absolute;
     background-color: white;
-    left: 109px;
+    left: 118px;
     top: 0;
     height: 90%;
     margin: 0px;
