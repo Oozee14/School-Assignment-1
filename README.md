@@ -1,2 +1,7 @@
 # School-Assignment-1
-hello
+        page:
+Kak     Dashboard POS 
+Final   
+Mak
+Kdey
+Somneng

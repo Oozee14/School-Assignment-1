@@ -1,5 +1,5 @@
 .side-bar {
-    /* display: none; */
+    display: none;
     position: relative;
     width: 130px;
     height: 1020px;
@@ -39,7 +39,7 @@ li.dropdown > ul {
     display: none;
     position: absolute;
     background-color: white;
-    left: 126px;
+    left: 122px;
     top: 0;
     height: 90%;
     margin: 0px;
