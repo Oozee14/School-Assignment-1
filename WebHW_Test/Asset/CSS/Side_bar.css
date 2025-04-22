@@ -39,7 +39,7 @@ li.dropdown > ul {
     display: none;
     position: absolute;
     background-color: white;
-    left: 122px;
+    left: 100%;
     top: 0;
     height: 90%;
     margin: 0px;
