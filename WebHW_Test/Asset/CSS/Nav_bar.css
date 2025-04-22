@@ -1,6 +1,6 @@
 
 .navbar {
-    height: 95px;
+    height: 85px;
     box-shadow: 2px 2px 5px gray;
     background-color: white;
 }
@@ -16,7 +16,7 @@
     border: none;
 }
 .logo-70 {
-    width: 90px;
+    width: 80px;
 }
 .Pos {
     background-color: rgb(225, 225, 225);

@@ -1,0 +1,22 @@
+.content > ul {
+    margin-top: 0px;
+    list-style-type: none;
+    display: flex;
+    margin-left: -40px;
+    gap: 5%;
+}
+.content > ul > li.db-block {
+    display: flex;
+    width: 35%;
+    border-radius: 20px;
+    background-color: white;
+    text-align: left;
+}
+.db-block-item {
+    padding: 10px 100px 10px 10%;
+}
+.r-b-18 {
+    color: brown;
+    font-weight: bolder;
+    font-size: 18px;
+}
