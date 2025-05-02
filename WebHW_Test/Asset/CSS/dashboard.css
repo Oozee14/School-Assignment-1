@@ -11,12 +11,56 @@
     border-radius: 20px;
     background-color: white;
     text-align: left;
+    box-shadow: 0px 2px 5px gray;
 }
 .db-block-item {
     padding: 10px 100px 10px 10%;
+}
+.f-s-18 {
+    font-size: 18px;
 }
 .r-b-18 {
     color: brown;
     font-weight: bolder;
     font-size: 18px;
+}
+.chart-top {
+    display: flex;
+    height: 728px;
+    gap: 1%;
+}
+.chart {
+    padding: 10px;
+    width: 68%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 2px 5px gray;
+}
+.chart > p {
+    margin-top: 5px;
+    margin-left: 4%;
+    font-size: 25px;
+}
+.tsp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+}
+.tsp-txt {
+    margin-top: 15px;
+    font-size: 25px;
+}
+.img-spa {
+    margin-top: 30px;
+    width: 430px;
+    height: 430px;
+    overflow: hidden;
+}
+.img-spa > img {
+    width: 450px;
+    height: 400px;
 }

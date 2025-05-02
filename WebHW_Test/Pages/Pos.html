@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pos</title>
+    <link rel="stylesheet" href="../Asset/CSS/Nav_bar.css">
+    <link rel="stylesheet" href="../Asset/CSS/layout_content.css">
+    <link rel="stylesheet" href="../Asset/CSS/pos.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <table border="0">
+                <tr>
+                    <td width="10vw">
+                        <button class="tran-button" onclick="window.location.href='Dashboard.html'">
+                            <img src="../Asset/Image/restaurant-logo.png" alt="Res_logo" class="logo-70" align="center">
+                        </button>
+                    </td>
+                    <td width="100%"></td>
+                    <td>
+                        <button class="dashboard-button" onclick="window.location.href='Dashboard.html'">Dashboard</button>
+                    </td>
+                    <!-- look this up in the CSS -->
+                    <td>
+                        <button class="User"></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="Display-main">
+            <div class="pos-content">
+                <div class="first-content">
+                    <input type="text">
+                    <img src="../Asset/Image/icons8-add-user-50.png" alt="add-user-icon" class="add-user">
+                    <table border="0" class="info-table">
+                        <tr class="i-t-name">
+                            <td>Products</td>
+                            <td>Price</td>
+                            <td>Qty</td>
+                            <td>Subtotal</td>
+                        </tr>
+                        <tr>
+                            <td>Spaghetti</td>
+                            <td>$ 128.00</td>
+                            <td>1</td>
+                            <td>$ 128.00</td>
+                        </tr>
+                        <tr>
+                            <td>Coke</td>
+                            <td>$ 5.00</td>
+                            <td>2</td>
+                            <td>$ 10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Milk</td>
+                            <td>$23.00</td>
+                            <td>1</td>
+                            <td>$23.00</td>
+                        </tr>
+                    </table>
+                    <div class="space"></div>
+                    <div class="t-pay"><p>Total Payable: $ 161.00</p></div>
+                    <div class="tax-dis-ship">
+                        <table border="0">
+                            <tr>
+                                <td>Tax</td>
+                                <td>Discount</td>
+                                <td>Shipping</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="div-number"><div class="p-num">0</div><div class="p-symbol">%</div></div>
+                                </td>
+                                <td>
+                                    <div class="div-number"><div class="p-num">0</div><div class="p-symbol">$</div></div>
+                                </td>
+                                <td>
+                                    <div class="div-number"><div class="p-num">0</div><div class="p-symbol">$</div></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="choice-button">
+                        <div class="first-content-button reset-button">
+                            <img src="../Asset/Image/icons8-reset-48-2.png" alt="">
+                            Reset
+                        </div>
+                        <div class="first-content-button pay-now-button">
+                            <img src="../Asset/Image/icons8-pay-50.png" alt="">
+                            Pay Now
+                        </div>
+                        <div class="first-content-button draft-button">
+                            <img src="../Asset/Image/icons8-sand-timer-50.png" alt="">
+                            Draft
+                        </div>
+                    </div>
+                </div>
+                <div class="second-content">
+                    <div class="list-cat" onclick="Openlcwindow()">List of Category</div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Scan/Search Product by Code or Name">
+                    </div>
+                    <table border="0" class="food-item">
+                        <tr>
+                            <td class="f-i a-s">
+                                <div class="img-f-i">
+                                    <div class="f-i-img">
+                                        <img src="../Asset/Image/food.jpg" alt="">
+                                    </div>
+                                    <p>Spaghetti</p>
+                                    <p><b>$ 128.00</b></p>
+                                </div>
+                            </td>
+                            <td class="f-i a-c">
+                                <div class="img-f-i">
+                                    <div class="f-i-img">
+                                        <img src="../Asset/Image/coca.webp" alt="">
+                                    </div>
+                                    <p>Coca Cola</p>
+                                    <p><b>$ 5.00</b></p>
+                                </div>
+                            </td>
+                            <td class="f-i a-l">
+                                <div class="img-f-i">
+                                    <div class="f-i-img">
+                                        <img src="../Asset/Image/milk.webp" alt="">
+                                    </div>
+                                    <p>Milk</p>
+                                    <p><b>$ 23.00</b></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="f-i a-s">
+                                <div class="img-f-i">
+                                    <div class="f-i-img">
+                                        <img src="../Asset/Image/sirloin-steak-recipe.jpg" alt="">
+                                    </div>
+                                    <p>Steak</p>
+                                    <p><b>$ 250.00</b></p>
+                                </div>
+                            </td>
+                            <td class="f-i a-c">
+                                <div class="img-f-i">
+                                    <div class="f-i-img">
+                                        <img src="../Asset/Image/burger.webp" alt="">
+                                    </div>
+                                    <p>Burger</p>
+                                    <p><b>$ 25.00</b></p>
+                                </div>
+                            </td>
+                            <td class="f-i a-l">
+                                <div class="img-f-i">
+                                    <div class="f-i-img">
+                                        <img src="../Asset/Image/delish-220517-dirty-shirley-cocktail-001-ab-web-1657145301.jpg.avif" alt="" style="height: 320px; margin-top: -40px; width: 230px;">
+                                    </div>
+                                    <p>Cocktail</p>
+                                    <p><b>$28.00</b></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="scroll-button">
+                        
+                        <div class="for-bac-button b-button">
+                            <img src="../Asset/Image/icons8-back-to-64.png" alt="">
+                        </div>
+                        <div class="for-bac-button f-b-num">1</div>
+                        <div class="for-bac-button f-b-num">2</div>
+                        <div class="for-bac-button f-button">
+                            <img src="../Asset/Image/icons8-next-64-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="l-c-hover">
+            <img src="../Asset/Image/icons8-cross-50.png" alt="" class="cross-img" onclick="Openlcwindow()">
+            <p>Lists of Category</p>
+            <table border="0" class="l-c-table">
+                <tr>
+                    <td class="p-r-15 p-b-30">
+                        <div class="l-c-td">
+                            <img src="../Asset/Image/icons8-camera-100.png" alt="" class="cam-img">
+                            <p>All Category</p>
+                        </div>
+                    </td>
+                    <td class="p-l-15 p-b-30">
+                        <div class="l-c-td">
+                            <img src="../Asset/Image/icons8-camera-100.png" alt="" class="cam-img">
+                            <p>Fash Foods</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="p-r-15">
+                        <div class="l-c-td">
+                            <img src="../Asset/Image/icons8-camera-100.png" alt="" class="cam-img">
+                            <p>Hard Drinks</p>
+                        </div>
+                    </td>
+                    <td class="p-l-15">
+                        <div class="l-c-td">
+                            <img src="../Asset/Image/icons8-camera-100.png" alt="" class="cam-img">
+                            <p>Soft Drinks</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="l-c-button">
+                <div class="l-c-b">
+                    <img src="../Asset/Image/icons8-back-50.png" alt="">
+                </div>
+                <div class="l-c-num">1</div>
+                <div class="l-c-num">2</div>
+                <div class="l-c-f">
+                    <img src="../Asset/Image/icons8-next-64.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function Openlcwindow() {
+            const div = document.querySelector(".l-c-hover");
+            div.style.display = (div.style.display ===  "none" || div.style.display === "")? "block" : "none";
+    }
+    </script>
+</body>
+</html>

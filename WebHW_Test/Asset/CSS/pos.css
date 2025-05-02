@@ -1,0 +1,326 @@
+/* .pos-content {
+    overflow: visible;
+} */
+.navbar {
+    position: relative;
+    z-index: 2;
+}
+.dashboard-button {
+    background-color: rgb(225, 225, 225);
+    border: 2px solid red;
+    border-radius: 20px;
+    color: red;
+    font-size: 16px;
+    padding: 10px 26px;
+}
+.pos-content {
+    width: 100%;
+    height: 995px;
+    display: flex;
+    gap: 2%;
+}
+.first-content {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    /* border-radius: 10px; */
+    z-index: 1;
+    padding: 0px 30px 0px 20px;
+}
+.first-content > input {
+    width: 92%;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.add-user {
+    margin-bottom: -20px;
+    margin-left: 5px;
+}
+.info-table {
+    margin-top: 30px;
+    border-collapse: collapse;
+    width: 100%;
+}
+.info-table td {
+    height: 40px;
+    width: 25%;
+    vertical-align: bottom;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.i-t-name{
+    background-color: lightgray;
+}
+.i-t-name td {
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+    padding-left: 10px;
+}
+/* dont ask me why i did this */
+.space {
+    background-color: transparent;
+    width: 10px;
+    height: 48%;
+}
+.t-pay {
+    background-color: darkturquoise;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+}
+.tax-dis-ship > table {
+    width: 100%;
+}
+.tax-dis-ship td{
+    width: 30%;
+    height: 35px;
+    vertical-align: bottom;
+    font-size: 18px;
+}
+.div-number {
+    border-radius: 5px;
+    width: 280px;
+    height: 40px;
+    display: flex;
+    background-color: darkgray;
+}
+.p-num {
+    width: 85%;
+    background-color: gainsboro;
+    margin: 2px 0 2px 2px;
+    padding-left: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 75%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.p-symbol {
+    width: 15%;
+    text-align: center;
+    background-color: rgb(188, 188, 188);
+    margin: 2px 2px 2px 2px;
+    padding: 9px 10px 9px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.choice-button {
+    list-style-type: none;
+    display: flex;
+    font-size: 19px;
+    color: white;
+    margin-top: 20px;
+    gap: 20px;
+}
+.first-content-button {
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px 30px;
+}
+.first-content-button img {
+    margin-bottom: -3px;
+    width: 20px;
+}
+.reset-button {
+    background-color: red;
+}
+.pay-now-button {
+    background-color: rgb(7, 183, 127);
+}
+.draft-button {
+    background-color: brown;
+}
+.second-content {
+    width: 48%;
+    height: 100%;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    z-index: 1;
+    padding: 20px 30px;
+}
+.list-cat {
+    border: 2px solid deepskyblue;
+    padding: 15px 375px;
+    color: deepskyblue;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.l-c-hover {
+    display: none;
+    border: 1px solid darkgray;
+    width: 499px;
+    /* width: 26%; */
+    height: 1040px;
+    /* height: 100%; */
+    position: absolute;
+    top: 1px;
+    left: 1400px;
+    /* left: 75%; */
+    z-index: 3;
+    background-color: white;
+    padding: 20px 10px 20px 20px;
+    border-radius: 1px;
+}
+.cross-img {
+    margin-right: 35%;
+    margin-bottom: -10px;
+}
+.l-c-hover > p {
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+}
+.l-c-table {
+    margin-top: 80px;
+    border-collapse: collapse;
+}
+.p-r-15 {
+    padding-right: 15px;
+}
+.p-l-15 {
+    padding-left: 15px;
+}
+.p-b-30 {
+    padding-bottom: 30px;
+}
+.l-c-td {
+    padding: 25px 15px 10px 15px;
+    border: 1px solid darkgray;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px gray;
+}
+.cam-img {
+    width: 180px;
+    padding-bottom: 20px;
+}
+.l-c-td p {
+    font-size: 30px;
+}
+.l-c-button {
+    margin-top: 90px;
+    background-color: transparent;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    gap: 5px;
+}
+.l-c-num {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    text-align: center;
+    background-color: brown;
+    color: white;
+    font-size: 25px;
+}
+.l-c-f {
+    margin-top: -5px;
+    margin-left: -4px;
+}
+.l-c-f img {
+    width: 57px;
+}
+.l-c-b {
+    margin-top: 0px;
+}
+
+.search-bar {
+    margin-top: 15px;
+}
+.search-bar input {
+    width: 850px;
+    background-color:gainsboro ;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.food-item {
+    margin-top: 30px;
+    width: 100%;
+    height: 65%;
+    border-collapse: collapse;
+}
+.f-i {
+    vertical-align: baseline;
+}
+.a-s {
+    padding-right: 6%;
+}
+.a-c {
+    padding: 0px 3%;
+}
+.a-l {
+    padding-left: 6%;
+}
+.img-f-i {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: block;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+}
+.f-i-img {
+    border-radius: 10px;
+    width: 230px;
+    height: 230px;
+    margin-bottom: 15px;
+    border: 1px solid darkgray;
+    box-shadow: 0px 2px 4px grey;
+    overflow: hidden;
+}
+.img-f-i img {
+    width: 230px;
+    height: 240px;
+}
+.img-f-i p {
+    font-size: 18px;
+    margin: 2px 2px 2px -8px;
+    padding: 0;
+}
+.img-f-i b {
+    color: brown;
+}
+.scroll-button {
+    margin-top: 10px;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    gap: 5px;
+}
+.for-bac-button {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    text-align: center;
+}
+.f-b-num {
+    background-color: brown;
+    color: white;
+    font-size: 32px;
+}
+.f-button {
+    margin-left: -12px;
+    margin-top: -12px;
+}
+.b-button {
+    margin-top: -11px;
+    margin-right: 12px;
+}
