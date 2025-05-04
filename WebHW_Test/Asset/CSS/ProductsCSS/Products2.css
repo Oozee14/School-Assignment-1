@@ -1,3 +1,75 @@
 .h1-hr {
-    margin-bottom: 0px;
+    margin-bottom: 30px;
+}
+.product-table {
+    width: 100%;
+    height: 440px;
+    background-color: white;
+}
+.p-t-1 {
+    display: flex;
+    height: 70px;
+    background-color: transparent;
+    margin: 15px;
+}
+.p-t-1 > p {
+    margin-top: 20px;
+    margin-right: 5px;
+    font-size: 25px;
+}
+.p-t-1 > input {
+    margin-top: 24px;
+    height: 25px;
+    font-size: 16px;
+    width: 15%;
+    padding-left: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.p-t-1-space {
+    flex-grow: 1;
+}
+.p-t-1-button {
+    margin-top: 32px;
+    border-radius: 5px;
+    padding: 9px 30px;
+    border: 2px solid;
+    margin-right: 14px;
+    font-size: 15px;
+}
+.filter-button {
+    border-color: dodgerblue;
+    color: dodgerblue;
+}
+.pdf-button {
+    border-color:lawngreen;
+    color: lawngreen;
+}
+.excel-button {
+    border-color: crimson;
+    color: crimson;
+}
+.p-t-1-button-2 {
+    margin-top: 32px;
+    border-radius: 5px;
+    padding: 10px 35px;
+    color: white;
+    font-size: 15px;
+}
+.import-button {
+    background-color: blue;
+    margin-right: 14px;
+}
+.create-button {
+    background-color:sienna;
+}
+.p-t-2 {
+    height: 320px;
+    background-color: pink;
+    margin: 15px;
+}
+.p-t-2 table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
 }
