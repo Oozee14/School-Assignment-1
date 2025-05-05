@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sales Report</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      width: 1850px;
+      height: 872px;
+      box-sizing: border-box;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .table-container {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    .filters {
+      margin-bottom: 10px;
+    }
+    .btn {
+      padding: 6px 12px;
+      border: none;
+      margin-left: 5px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    .btn-filter { background: #d0e6ff; }
+    .btn-pdf { background: #c8f7c5; }
+    .btn-excel { background: #ffe6cc; }
+    .status-complete { color: green; font-weight: bold; }
+    .payment-paid { color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <h2>Sales Report</h2>
+    </div>
+
+    <div class="table-container">
+      <div class="filters">
+        <label>Date Range:</label>
+        <input type="date" /> - <input type="date" />
+        <button class="btn btn-filter">Filter</button>
+        <button class="btn btn-pdf">PDF</button>
+        <button class="btn btn-excel">EXCEL</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Reference</th>
+            <th>Customer</th>
+            <th>Warehouse</th>
+            <th>Status</th>
+            <th>Grand Total</th>
+            <th>Paid</th>
+            <th>Due</th>
+            <th>Payment Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025-02-07</td>
+            <td>SL_1111</td>
+            <td>walk-in-customer</td>
+            <td>Default Warehouse</td>
+            <td class="status-complete">Completed</td>
+            <td>25.50</td>
+            <td>25.50</td>
+            <td>0.00</td>
+            <td class="payment-paid">Paid</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5">Total</td>
+            <td>25.50</td>
+            <td>25.50</td>
+            <td>0.00</td>
+            <td><i class="fa-regular fa-file"></i></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <p style="text-align: center; margin-top: 20px; color: #555;">
+      Assignment Restaurant Manager © 2025 Developed by Makara the king
+    </p>
+  </div>
+</body>
+</html>

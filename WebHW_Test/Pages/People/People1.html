@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../Asset/CSS/Side_bar.css">
     <link rel="stylesheet" href="../../Asset/CSS/layout_content.css">
     <link rel="stylesheet" href="../../Asset/CSS/main_content.css">
+    <link rel="stylesheet" href="../../Asset/CSS/main_table.css">
     <link rel="stylesheet" href="../../Asset/CSS/PeopleCSS/people1.css">
 </head>
 <body>
@@ -23,21 +24,149 @@
                             <!-- recommanded to use div and table -->
                             <h1 class="page-title">Customers Management</h1> 
                             <hr class="h1-hr"> 
-                        <form>
-                            <table>
-                            <tr>
-                                <td class="glass">🔍</td>
-                                <td><input type="search"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </table>
-                        </form>
+                            <div class="product-table">
+                                <div class="p-t-1">
+                                    <p>🔍</p><input type="text" placeholder="Search this table">
+                                    <div class="p-t-1-space"></div>
+                                    <div class="filter-button p-t-1-button">Filter</div>
+                                    <div class="pdf-button p-t-1-button">PDF</div>
+                                    <div class="excel-button p-t-1-button">EXCEL</div>
+                                    <div class="import-button p-t-1-button-2">Import products</div>
+                                    <div class="create-button p-t-1-button-2">Create</div>
+                                </div>
+                                <div class="p-t-2">
+                                    <table border="0">
+                                        <tr height="40px" class="border-bottom" style="font-weight: bold;">
+                                            <td>
+                                                <div class="d-flex">
+                                                    <input type="checkbox" class="cell-input">Code
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="u-d-triangle">
+                                                        &#9650;<br>
+                                                        &#9660;
+                                                    </div>
+                                                    Name
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="u-d-triangle">
+                                                        &#9650;<br>
+                                                        &#9660;
+                                                    </div>
+                                                    Phone
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="u-d-triangle">
+                                                        &#9650;<br>
+                                                        &#9660;
+                                                    </div>
+                                                    Email
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="u-d-triangle">
+                                                        &#9650;<br>
+                                                        &#9660;
+                                                    </div>
+                                                    Tax Number
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="u-d-triangle">
+                                                        &#9650;<br>
+                                                        &#9660;
+                                                    </div>
+                                                    Total Sale Due
+                                                </div>
+                                            </td>
+                                            <td style="padding-left: 20px;">
+                                                Total Sell Return Due
+                                            </td>
+                                            <td align="right">
+                                                <div class="d-flex">
+                                                    <div style="flex-grow: 1;width: 50px;"></div>
+                                                    Action
+                                                    <div style="width: 10px;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr  class="border-bottom">
+                                            <td>
+                                                <div class="d-flex">
+                                                    <input type="checkbox" class="cell-input">3
+                                                </div>
+                                            </td>
+                                            <td class="m-left">Booking Customer</td>
+                                            <td class="m-left">093365221</td>
+                                            <td class="m-left"></td>
+                                            <td class="m-left"></td>
+                                            <td class="m-left">0.00</td>
+                                            <td class="m-left">0.00</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr  class="border-bottom">
+                                            <td>
+                                                <div class="d-flex">
+                                                    <input type="checkbox" class="cell-input">2
+                                                </div>
+                                            </td>
+                                            <td class="m-left">VIP Customer</td>
+                                            <td class="m-left">012365221</td>
+                                            <td class="m-left">Bunleab@yahoo.com</td>
+                                            <td class="m-left"></td>
+                                            <td class="m-left">0.00</td>
+                                            <td class="m-left">0.00</td>
+                                            <td class="m-left"></td>
+                                        </tr>
+                                        <tr  class="border-bottom">
+                                            <td>
+                                                <div class="d-flex">
+                                                    <input type="checkbox" class="cell-input">1
+                                                </div>
+                                            </td>
+                                            <td class="m-left">walk-in-customer</td>
+                                            <td class="m-left">123456780</td>
+                                            <td class="m-left">walk-in-customer@example.com</td>
+                                            <td class="m-left"></td>
+                                            <td class="m-left">0.00</td>
+                                            <td class="m-left">0.00</td>
+                                            <td class="m-left"></td>
+                                        </tr>
+                                        <tr style="color: gray;">
+                                            <td>
+                                                <div class="d-flex" style="padding-top: 10px;">
+                                                    Rows per page:
+                                                    <div class="num-s">
+                                                        10
+                                                        <div class="s-u-d-triangle">
+                                                            &#9650;<br>
+                                                            &#9660;
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td colspan="5"></td>
+                                            <td align="right">1-3 of 3</td>
+                                            <td>
+                                                <div class="d-flex center-both">
+                                                    <p class="s-point m-r-20">&#9664;</p>
+                                                    <p class="p-n m-r-20">prev</p>
+                                                    <p>next</p>
+                                                    <p class="s-point m-l-20">&#9654;</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </td></tr>
                     <tr><td height="115px">

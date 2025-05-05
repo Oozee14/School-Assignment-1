@@ -29,8 +29,39 @@
 .side-bar > ul > li:hover {
     color: crimson;
 }
-.png-55 {
+.svg-65 {
+    margin-left: 16px;
     width: 65px;
+    height: 65px;
+    margin-bottom: 5px;
+}
+.dashboard-svg {
+    -webkit-mask-image: url('../Image/icons8-dashboard-100.svg');
+    mask-image: url('../Image/icons8-dashboard-100.svg');
+}
+.product-svg {
+    -webkit-mask-image: url('../Image/icons8-products-100.svg');
+    mask-image: url('../Image/icons8-products-100.svg');
+}
+.people-svg {
+    -webkit-mask-image: url('../Image/icons8-people-100.svg');
+    mask-image: url('../Image/icons8-people-100.svg');
+}
+.setting-svg {
+    -webkit-mask-image: url('../Image/icons8-setting-100.svg');
+    mask-image: url('../Image/icons8-setting-100.svg');
+}
+.report-svg {
+    -webkit-mask-image: url('../Image/icons8-report-100.svg');
+    mask-image: url('../Image/icons8-report-100.svg');
+}
+.colorize {
+    background-color: brown; /* Color of the icon */
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.side-bar > ul > li:hover .colorize{
+    background-color: crimson;
 }
 li.dropdown {
     z-index: 1;
