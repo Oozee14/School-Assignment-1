@@ -1,3 +1,37 @@
 .h1-hr {
     margin-bottom: 0px;
 }
+.m-left {
+    padding-bottom: 0px;
+}
+.product-table {
+    height: 470px;
+}
+.date-range {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #666;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+}
+.date-range p {
+    width: fit-content;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid gray
+    ;margin-bottom: 0px;
+}
+.p-t-2 span {
+    font-size: 14px;
+    color: green;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+.gray-bar {
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+    background-color: lightgrey;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sale Report</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 1850px;
+      height: 870px;
+      background-color: #f7f9fc;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1400px;
+      margin: 40px auto 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 30px 40px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .date-range {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.2s ease-in-out;
+    }
+
+    .btn-filter {
+      background-color: #eaf3ff;
+      color: #0077cc;
+    }
+
+    .btn-pdf {
+      background-color: #e7f9ef;
+      color: #1a8c37;
+    }
+
+    .btn-excel {
+      background-color: #ffe9e9;
+      color: #d33;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    th {
+      background-color: #f4f6f9;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .completed {
+      background-color: #e2f7e2;
+      color: #1e7e34;
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-size: 13px;
+      display: inline-block;
+    }
+
+    .paid {
+      background-color: #e2f7e2;
+      color: #1e7e34;
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-size: 13px;
+      display: inline-block;
+    }
+
+    .footer-row {
+      font-weight: bold;
+      background-color: #f4f6f9;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .footer-note {
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    .footer-note strong {
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sale Report</h2>
+    <div class="date-range">2025-02-06 — 2025-02-07</div>
+
+    <div class="actions">
+      <button class="btn btn-filter">Filter</button>
+      <button class="btn btn-pdf">PDF</button>
+      <button class="btn btn-excel">EXCEL</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Reference</th>
+          <th>Customer</th>
+          <th>Warehouse</th>
+          <th>Status</th>
+          <th>Grand Total</th>
+          <th>Paid</th>
+          <th>Due</th>
+          <th>Payment Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-02-07</td>
+          <td>SL_1111</td>
+          <td>walk-in-customer</td>
+          <td>Default Warehouse</td>
+          <td><span class="completed">Completed</span></td>
+          <td>25.50</td>
+          <td>25.50</td>
+          <td>0.00</td>
+          <td><span class="paid">Paid</span></td>
+        </tr>
+        <tr class="footer-row">
+          <td colspan="5">Total</td>
+          <td>25.50</td>
+          <td>25.50</td>
+          <td>0.00</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pagination">
+      <div>Rows per page: 10</div>
+      <div>1 - 1 of 1 | prev next</div>
+    </div>
+  </div>
+  <div class="footer-note">
+    Assignment Restaurant Manager <br />
+    &copy; 2025 Developed by Hong Bunleab <br />
+    All rights reserved - v 1.0
+  </div>
+</body>
+</html>

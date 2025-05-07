@@ -12,10 +12,10 @@
     background-color: transparent;
     margin: 15px;
 }
-.p-t-1 > p {
-    margin-top: 20px;
+.mag-svg {
+    margin-top: 5px;
     margin-right: 5px;
-    font-size: 25px;
+    width: 30px;
 }
 .p-t-1 > input {
     margin-top: 24px;
@@ -30,12 +30,27 @@
     flex-grow: 1;
 }
 .p-t-1-button {
+    display: flex;
     margin-top: 32px;
     border-radius: 5px;
-    padding: 9px 30px;
+    padding: 9px 20px;
     border: 2px solid;
     margin-right: 14px;
     font-size: 15px;
+}
+.p-t-1-button p {
+    margin-top: 0px;
+}
+.filter-svg {
+    background-color: dodgerblue;
+    -webkit-mask-image: url('../Image/funnel-outline.svg');
+    mask-image: url('../Image/funnel-outline.svg');
+}
+.button-svg {
+    width: 17px;
+    margin-right: 5px;
+    -webkit-mask-size: cover;
+    mask-size: cover;
 }
 .filter-button {
     border-color: dodgerblue;
@@ -50,11 +65,25 @@
     color: crimson;
 }
 .p-t-1-button-2 {
+    display: flex;
     margin-top: 32px;
     border-radius: 5px;
-    padding: 10px 35px;
+    padding: 10px 30px;
     color: white;
     font-size: 15px;
+}
+.p-t-1-button-2 p {
+    margin-top: 0px;
+}
+.import-svg {
+    background-color: white;
+    -webkit-mask-image: url('../Image/download-outline.svg');
+    mask-image: url('../Image/download-outline.svg');
+}
+.create-svg {
+    background-color: white;
+    -webkit-mask-image: url('../Image/plus-circle-outline.svg');
+    mask-image: url('../Image/plus-circle-outline.svg');
 }
 .import-button {
     background-color: blue;
@@ -129,4 +158,34 @@
 .center-both {
     justify-content: center;
     align-items: center;
+}
+.action-button {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+}
+.act-svg {
+    width: 35px;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.act-edit {
+    width: 32px;
+    height: 32px;
+    margin-top: 1px;
+    background-color: limegreen;
+    -webkit-mask-image: url('../Image/edit.svg');
+    mask-image: url('../Image/edit.svg');
+}
+.act-close {
+    background-color: red;
+    -webkit-mask-image: url('../Image/close-circle-outline.svg');
+    mask-image: url('../Image/close-circle-outline.svg');
+}
+.act-eye {
+    background-color: aqua;
+    -webkit-mask-image: url('../Image/eye-outline.svg');
+    mask-image: url('../Image/eye-outline.svg');
 }

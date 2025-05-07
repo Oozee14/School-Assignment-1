@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../Asset/CSS/Side_bar.css">
     <link rel="stylesheet" href="../../Asset/CSS/layout_content.css">
     <link rel="stylesheet" href="../../Asset/CSS/main_content.css">
+    <link rel="stylesheet" href="../../Asset/CSS/main_table.css">
     <link rel="stylesheet" href="../../Asset/CSS/ReportsCSS/Report2.css">
 </head>
 <body>
@@ -23,6 +24,85 @@
                             <!-- recommanded to use div and table -->
                             <h1 class="page-title">Product Report</h1> 
                             <hr class="h1-hr">
+                            <div class="product-table">
+                                <div class="date-range">
+                                    <p>1999-12-31 — 2025-02-07</p>
+                                </div>
+                                <div class="p-t-1">
+                                    <img src="../../Asset/Image/search-outline.svg" alt="" class="mag-svg"><input type="text" placeholder="Search this table">
+                                    <div class="p-t-1-space"></div>
+                                    <div class="pdf-button p-t-1-button"><p>PDF</p></div>
+                                    <div class="excel-button p-t-1-button"><p>EXCEL</p></div>
+                                </div>
+                                <div class="w-h">
+                                    <div style="flex-grow: 1;"></div>
+                                    <div class="w-h-select">
+                                        <p>Warehouse</p>
+                                        <select class="warehouse-select">
+                                            <option>Choose Warehouse</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="p-t-2">
+                                    <table border="0">
+                                        <tr class="border-bottom" style="font-weight: bold;">
+                                          <td class="p-l-5">Code</td>
+                                          <td class="p-l-5">Product</td>
+                                          <td class="p-l-5">Total Sales</td>
+                                          <td class="p-l-5">Total Amount</td>
+                                          <td align="right" class="p-l-5 p-r-20">Action</td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                          <td class="p-l-5">123456</td>
+                                          <td class="p-l-5">Spaghetti</td>
+                                          <td class="p-l-5">0 Pack</td>
+                                          <td class="p-l-5">$0</td>
+                                          <td class="p-l-5">
+                                            <div class="d-flex">
+                                                <div style="flex-grow: 1;"></div>
+                                                <div class="create-button p-t-1-button-2">Reports</div>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                          <td class="p-l-5">89678000</td>
+                                          <td class="p-l-5">Coca</td>
+                                          <td class="p-l-5">1</td>
+                                          <td class="p-l-5">$25.5</td>
+                                          <td class="p-l-5">
+                                            <div class="d-flex">
+                                                <div style="flex-grow: 1;"></div>
+                                                <div class="create-button p-t-1-button-2">Reports</div>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr height="40px" style="color: gray;">
+                                            <td>
+                                                <div class="d-flex" style="padding-top: 10px;">
+                                                    Rows per page:
+                                                    <div class="num-s">
+                                                        10
+                                                        <div class="s-u-d-triangle">
+                                                            &#9650;<br>
+                                                            &#9660;
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td colspan="3"></td>
+                                            <td>
+                                                <div class="d-flex center-both">
+                                                    <p class="m-r-50">1-2 of 2</p>
+                                                    <p class="s-point m-r-20">&#9664;</p>
+                                                    <p class="p-n m-r-20">prev</p>
+                                                    <p>next</p>
+                                                    <p class="s-point m-l-20 m-r-20">&#9654;</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                      </table>
+                                </div>
+                            </div>
                         </div>
                     </td></tr>
                     <tr><td height="115px">
