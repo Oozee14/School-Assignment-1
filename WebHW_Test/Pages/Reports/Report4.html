@@ -8,35 +8,79 @@
     <link rel="stylesheet" href="../../Asset/CSS/Side_bar.css">
     <link rel="stylesheet" href="../../Asset/CSS/layout_content.css">
     <link rel="stylesheet" href="../../Asset/CSS/main_content.css">
+    <link rel="stylesheet" href="../../Asset/CSS/main_table.css">
     <link rel="stylesheet" href="../../Asset/CSS/ReportsCSS/Report4.css">
 </head>
 <body>
-    <div class="main">
-        <div id="navbar"></div>
-        <div class="Display-main">
-            <div id="side-bar"></div>
-            <div class="main-content">
-                <table border="0">
-                    <tr><td height="850px">
-                        <div class="content">
-                            <!-- Down here is where you write everything -->
-                            <!-- recommanded to use div and table -->
-                            <h1 class="page-title">Top Sale Report</h1> 
-                            <hr class="h1-hr">
+  <div class="main">
+    <div id="navbar"></div>
+      <div class="Display-main">
+        <div id="side-bar"></div>
+          <div class="main-content">
+            <table border="0">
+              <tr><td height="850px">
+                <div class="content">
+                  <h1 class="page-title">Top Sale Report</h1>
+                  <hr><br>
+                  <div class="product-table">
+                        <div class="date-range"><p>1999-12-31 - 2025-02-07</p></div>
+                        <div class="p-t-1">
+                            <img src="../../Asset/Image/search-outline.svg" alt="" class="mag-svg"><input type="text" placeholder="Search this table">
+                            <div class="p-t-1-space"></div>
+                            <div class="pdf-button p-t-1-button"><p>PDF</p></div>
+                            <div class="excel-button p-t-1-button"><p>EXCEL</p></div>
                         </div>
-                    </td></tr>
+                        <div class="p-t-2">
+                            <table border="0">
+                                <tr class="border-bottom">
+                                  <td style="padding-left: 5px;">Code</td>
+                                  <td style="padding-left: 5px; width: 300px;">Product</td>
+                                  <td style="padding-left: 5px; width: 300px;">Total Sales</td>
+                                  <td style="padding-left: 5px;">Total Amount</td>
+                                </tr>
+                                <tr class="border-bottom">
+                                  <td style="padding-left: 5px;">89678000</td>
+                                  <td style="padding-left: 5px;">Coca</td>
+                                  <td style="padding-left: 5px;">1</td>
+                                  <td style="padding-left: 5px;">$25.5</td>
+                                </tr>
+                                <tr style="color: gray; height: 60px;">
+                                  <td style="padding-left: 5px;">
+                                    <div class="d-flex">
+                                      Rows per page:
+                                      <div class="num-s">
+                                        10
+                                        <div class="s-u-d-triangle">
+                                          &#9650;<br>
+                                          &#9660;
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td colspan="2"></td>
+                                  <td>
+                                    <div class="d-flex center-both">
+                                      <p class="m-r-50">1-1 of 1</p>
+                                      <p class="s-point m-r-20">&#9664;</p>
+                                      <p class="p-n m-r-20">prev</p>
+                                      <p>next</p>
+                                      <p class="s-point m-l-20">&#9654;</p>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>                              
+                        </div> 
                     <tr><td height="115px">
-                        <div class="credit">
-                            <p class="title">Assignment Restaurant Manager</p>
-                            <hr>
-                            <p class="author">
-                                &copy; Developed by Group 5
-                                <br>
-                                All right reserved - v10
-                            </p>
-                        </div>
-                    </td></tr>
-                </table>
+                      <div class="credit">
+                          <p class="title">Assignment Restaurant Manager</p>
+                          <hr>
+                          <p class="author">
+                              &copy; Developed by Group 5
+                              <br>
+                              All right reserved - v10
+                          </p>
+                      </div>
+                  </td></tr>
             </div>
         </div>
     </div>
