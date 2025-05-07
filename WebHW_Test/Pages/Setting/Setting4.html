@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../Asset/CSS/Side_bar.css">
     <link rel="stylesheet" href="../../Asset/CSS/layout_content.css">
     <link rel="stylesheet" href="../../Asset/CSS/main_content.css">
+    <link rel="stylesheet" href="../../Asset/CSS/main_table.css">
     <link rel="stylesheet" href="../../Asset/CSS/SettingCSS/Setting4.css">
 </head>
 <body>
@@ -23,8 +24,57 @@
                             <!-- recommanded to use div and table -->
                             <h1 class="page-title">Backup Setting</h1> 
                             <hr class="h1-hr">
-                        </div>
-                    </td></tr>
+                            <div class="sett-table">
+                                <div class="ca">
+                                    You will find your backup on <strong>/storage/app/public/backup</strong> and save it to your pc
+                                </div>
+                            <div class="p-t-1">
+                                <div class="p-t-1-space"></div>
+                                <button class="bb"><div class="create-svg button-svg"></div><p>Generate Backup</p></button>
+                            </div>
+                                    <div class="p-t-2">
+                                        <table border="0">
+                                            <tr height="40px" class="border-bottom" style="font-weight: bold;">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        Date
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="u-d-triangle">
+                                                            &#9650;<br>
+                                                            &#9660;
+                                                        </div>
+                                                        file size
+                                                    </div>
+                                                </td>
+                                                <td align="right">
+                                                    <div class="d-flex">
+                                                        <div class="u-d-triangle">
+                                                            &#9650;<br>
+                                                            &#9660;
+                                                        </div>
+                                                        <div style="flex-grow: 1;width: 50px;"></div>
+                                                        Action
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr  class="border-bottom">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        backup-2025-02-07.sql
+                                                    </div>
+                                                </td>
+                                                <td style="padding-left: 25px;">0 bytes</td>
+                                                <td>
+                                                    <div class="action-button">
+                                                        <div class="act-svg act-close"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
                     <tr><td height="115px">
                         <div class="credit">
                             <p class="title">Assignment Restaurant Manager</p>

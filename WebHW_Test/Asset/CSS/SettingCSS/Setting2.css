@@ -1,3 +1,98 @@
 .h1-hr {
     margin-bottom: 0px;
 }
+.product-table {
+    height: 320px;
+}
+.p-t-2 {
+    height: 100px;
+}
+.p-l-80 {
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle {
+    position: relative;
+    width: 50px;
+    height: 20px;
+}
+
+.toggle input {
+    display: none;
+}
+
+.slider {
+    background: #6b4f3b;
+    width: 48px;
+    border-radius: 20px;
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    top: 1.5px;
+    left: 2px;
+    transition: 0.3s;
+    transform: scale(1.6);
+    border: 1px solid gray;
+}
+
+.toggle input:checked+.slider::before {
+    transform: translateX(25px) scale(1.6);
+}
+
+.submit-button {
+    display: flex;
+    background-color: #7A5C4B;
+    color: white;
+    border: none;
+    padding: 0px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .p{
+    font-size: large;
+    margin-left: 20px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .message-box {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px 10px 10px 10px;
+    background-color: #f9f9fb;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    margin-left: 15px;
+  }
+  .checkmark-svg {
+    margin-top: 15px;
+    margin-right: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    -webkit-mask-image: url('../../Image/checkmark-circle-2-outline.svg');
+    mask-image: url('../../Image/checkmark-circle-2-outline.svg');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
