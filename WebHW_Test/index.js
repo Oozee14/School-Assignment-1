@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         contentWrapper.classList.add("fade-out");
 
         setTimeout(function() {
-            window.location.href = "Pages/Dashboard.html";
+            window.location.href = "Pages/Dashboard/Dashboard.html";
         }, 500);
     });
 });

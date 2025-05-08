@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../../Asset/CSS/layout_content.css">
     <link rel="stylesheet" href="../../Asset/CSS/main_content.css">
     <link rel="stylesheet" href="../../Asset/CSS/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="chart.css">
 </head>
 <body>
     <div class="main">
@@ -53,7 +55,13 @@
                             <div class="chart-top">
                                 <div class="chart">
                                 <p>This Week Sales</p>
-                                <img src="" alt="chart">
+                                <div class="chart-graph">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div id="line-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tsp">
                                 <p class="tsp-txt">Top Selling Product (2025)</p>
@@ -82,5 +90,7 @@
         </div>
     </div>
     <script src="../../Asset/Javascript/Nav_bar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="chart.js"></script>
 </body>
 </html>
