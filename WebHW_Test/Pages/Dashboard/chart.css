@@ -3,6 +3,7 @@
     padding: 15px;
     height: 610px;
     position: relative;
+    z-index: 1;
   }
   
   .card::before,
