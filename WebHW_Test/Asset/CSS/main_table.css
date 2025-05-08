@@ -46,6 +46,16 @@
     -webkit-mask-image: url('../Image/funnel-outline.svg');
     mask-image: url('../Image/funnel-outline.svg');
 }
+.pdf-svg {
+    background-color: lawngreen;
+    -webkit-mask-image: url('../Image/File\ Copy\ by\ iconSvg.co.svg');
+    mask-image: url('../Image/File\ Copy\ by\ iconSvg.co.svg');
+}
+.xls-svg {
+    background-color: crimson;
+    -webkit-mask-image: url('../Image/xls-icon.svg');
+    mask-image: url('../Image/xls-icon.svg');
+}
 .button-svg {
     width: 17px;
     margin-right: 5px;

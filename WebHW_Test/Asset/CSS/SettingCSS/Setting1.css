@@ -1,3 +1,113 @@
 .h1-hr {
     margin-bottom: 0px;
 }
+.product-table {
+    height: 600px;
+}
+.p-t-1 {
+    height: 100%;
+}
+.p-t-1 table {
+    border-collapse: collapse;
+    margin: 10px 0px;
+    height: calc(100% - 20px);
+    width: 100%;
+}
+.spec-input > select, .spec-input > input {
+    width: calc(100% - 40px);
+    height: 40px;
+    border: 1.5px solid darkgray;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: white;
+}
+.choose-file {
+    margin-bottom: 15px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 2px 5px;
+    box-shadow: 0px 1px 2px lightgray;
+}
+input::placeholder {
+    color: black;
+}
+input[type=text]{
+    background-color: rgb(230, 230, 230);
+    border-color: gray;
+}
+textarea {
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    background-color: #f2f4f5;
+    height: 75px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+}
+select,input,textarea::placeholder {
+    color: black;
+    padding-left: 5px;
+}
+.submit-button {
+    display: flex;
+    background-color: #7A5C4B;
+    color: white;
+    border: none;
+    padding: 0px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+.checkmark-svg {
+    margin-top: 15px;
+    margin-right: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    -webkit-mask-image: url('../../Image/checkmark-circle-2-outline.svg');
+    mask-image: url('../../Image/checkmark-circle-2-outline.svg');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+/* Hide the default checkbox */
+.custom-checkbox input {
+    display: none;
+  }
+  
+  /* Create custom checkbox */
+  .custom-checkbox .checkmark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    position: relative;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  /* Style when checkbox is checked */
+  .custom-checkbox input:checked + .checkmark {
+    background-color: #7A5C4B; /* green when checked */
+  }
+  
+  /* Optional: add a checkmark symbol */
+  .custom-checkbox input:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
